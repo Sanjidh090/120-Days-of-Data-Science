@@ -1,12 +1,18 @@
 import random
-def sort_list(x = []):
-    
-    import time
-    start = time.time()
-    x = sorted(x)
-    end = time.time()
-    print(f"Sorting took: {end - start} seconds")
+a = [random.randint(0, 100) for _ in range(51)]
+b = [random.randint(0, 100) for _ in range(51)]
 
-x = [random.randint(0, 10000) for _ in range(1000)]
+def match_lists(a =[], b = []):
+    match = []
+    count = 0
+    for i in range(len(a)):
+        for j in range(len(b)):
+            count += 1
+            if a[i] == b[j]:
+                match.append(a[i])
+    print(match)   
+    print(set(match))         
+    print(f"Number of matching elements: {len(match)}") 
+    print(f"Total comparisons made: {count}") 
 
-sort_list(x)
+match_lists(a, b)
