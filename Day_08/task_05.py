@@ -1,4 +1,4 @@
-def stringbuild(n):
+def string_builder(n):
     chars = []
     for i in range(n):
         chars.append("c")
@@ -7,5 +7,7 @@ def stringbuild(n):
     s = "".join(chars)      
     print("Final string ID:", id(s))
     return s
-s = stringbuild(10000)
-print("Final string:", s)
+if __name__ == "__main__": 
+    s = string_builder(10000)
+    print(f"Final string length: {len(s)}")
+    print(f"First 50 characters: {s[:50]}...")
