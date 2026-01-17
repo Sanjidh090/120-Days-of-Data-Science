@@ -2,7 +2,7 @@ class User:
     def __init__(self, username):
         self.username = username
     def info(self):
-        return f"{self.username} is Added in user information."
+        return f"{self.username} is Added here."
         
 class Admin(User):
     def __init__(self, username, Access):
