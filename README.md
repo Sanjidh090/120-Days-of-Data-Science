@@ -14,3 +14,4 @@ You are welcome to check my works and repositories!
 ├── notes/           # Concept notes and summaries
 └── resources/       # Useful links, books, references
 ```
+We got books
